@@ -1,0 +1,3 @@
+        works out of box on ubuntu 8.04, February 23, 2009
+        ByFatih Olmez (Columbus, OH)  - See all my reviews
+i received a bunch of manuals and a CD. when i bought it i installed windows back on my pc. sometime later windows made me sick again and one day i had a format and installed ubuntu. first thing i plugged my camera, and there you go. ubuntu immediately recognized it and run its own image import program. "working out of box in ubuntu" is enough for me to love an item and i love this camera.

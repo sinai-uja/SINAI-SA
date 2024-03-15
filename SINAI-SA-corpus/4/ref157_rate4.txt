@@ -1,0 +1,3 @@
+        Camera can strip gears if powered on with lens blocked, December 16, 2008
+        ByRichard J. Shulak (Mesa, AZ)  - See all my reviews
+This camera takes excellent pictures but there is one caution about using it. Do not power on the camera when anything can stop the lens from extending. This will strip the gears and you might start getting the a message that the camera must be restarted. It eventually can cause the camera to not operate at all. Best advice is to leave the camera in the 'review' mode. That way if it is in your pocket or purse and does get accidently turned on, the lens will not try to extend. 

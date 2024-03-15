@@ -1,0 +1,174 @@
+        Excelent picture and video, January 29, 2009
+        ByReil  - See all my reviews
+<!--
+function fp_resizePlayerSpace(nsPrefix,w,h)
+{	
+  try {	
+    var ifrm = parent.document.getElementById(nsPrefix + "movieFrameID");
+    if (ifrm) {	
+        var h2 = h + 35;
+        ifrm.style.height = h2;
+      }
+    } catch(err) {
+    } 
+  if (h > 0) {
+      document.getElementById(nsPrefix + "clipDiv").style.height=h;
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height=h;
+  }
+  else {
+      document.getElementById(nsPrefix + "clipDiv").style.height="";
+      document.getElementById(nsPrefix + "videoPlaceholder").style.height="";
+  }
+}
+function fp_rewriteDiv(nsPrefix,divName,html)
+{	
+    document.getElementById(nsPrefix + divName).innerHTML=html;
+}
+function embeddingPopup(nsPrefix)
+{
+  alert("placeholder function for embedding code");
+}
+-->
+<!--
+function cv_31098671embeddingPopup(){	
+alert("Embedding code will be displayed here.");
+}
+-->
+<!--
+var cv_31098671textString = '';
+fp_rewriteDiv("cv_31098671","chiDiv",cv_31098671textString);
+-->
+        // <![CDATA[
+var cv_31098671so;	   
+function cv_31098671loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+  try {
+      cv_31098671so = new SWFObject(swfLocation, "cv_31098671AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+      for (var v in swfParams) {
+        cv_31098671so.addVariable(v, encodeURIComponent(swfParams[v]));
+      }
+      for (var v in flashParams) {
+        cv_31098671so.addParam(v, flashParams[v]);
+      }
+      for (var v in embedAttributes) {
+        cv_31098671so.setAttribute(v, embedAttributes[v]);
+      }
+      var agt = navigator.userAgent;
+      var reFirefox = new RegExp("firefox/", "i");
+      var regx = agt.split(reFirefox);
+      var ffVersion = 8;
+      if (regx[1]) {
+          var pts = regx[1].split(/[.]/);
+          ffVersion = parseFloat(pts[0] + "." + pts[1]);
+      }
+      var minorVersion = parseFloat(navigator.ap);
+      if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
+          cv_31098671so.setAttribute("height", swfHeight);
+          cv_31098671so.setAttribute("width", swfWidth);
+          cv_31098671so.addVariable("oldFirefox", "1");	     
+      }
+      if (cv_31098671so.write("cv_31098671flashcontent")) {
+          fp_resizePlayerSpace('cv_31098671', 
+                               320, 
+                               283);
+      }
+      else {
+          var nsPrefix = 'cv_31098671';
+          fp_resizePlayerSpace(nsPrefix, 0, 0);
+          fp_rewriteDiv(nsPrefix, "flashcontent", ' To view this video download the Flash Player (version 9.0.28 or higher)');
+      }
+  } catch(err) {
+      alert("caught error" + err);
+      fp_resizePlayerSpace('cv_31098671', 0, 0);
+  }
+  return false;
+}
+function cv_31098671loadSwf(movieID, playerVersion) {
+    var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/rc12/AMPlayer.swf";
+    var swfWidth = "320";
+    var swfHeight = "100%";
+    var flashVersion = "9.0.28";
+    var bgColor = "#FFFFFF";
+    var swfParams = {};
+    var flashParams = {};
+    var embedAttributes = {};
+    swfParams.amazonPort = "80";
+    swfParams.nsPrefix = "cv_31098671";
+    swfParams.locale = "us";
+    swfParams.logUrl = "gp/mpd/l";
+    swfParams.canResize = "1";
+    swfParams.autoPlay = "1";
+    swfParams.sessionId = "000-0000000-0000000";
+    swfParams.salign = "LT";
+    swfParams.preset = "detail";
+    swfParams.mediaObjectId = "m1DC7IOGAOS1I8";
+    swfParams.autoPlayTimer = "";
+    swfParams.enableShare = "0";
+    swfParams.mediaObjectIDList = "m1DC7IOGAOS1I8";
+    swfParams.permUrl = "gp/mpd/permalink";
+    swfParams.refUrl = "|gp|customer-reviews|B0011ZCDKS";
+    swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/m1DC7IOGAOS1I8/000-0000000-0000000";
+    swfParams.amazonServer = "www.amazon.com";
+    swfParams.scale = "noscale";
+    flashParams.salign = "LT";
+    flashParams.bgcolor = "#FFFFFF";
+    flashParams.allowScriptAccess = "always";
+    flashParams.quality = "high";
+    flashParams.wmode = "transparent";
+    if (movieID){
+      if (playerVersion == '3'){
+        swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/rc12/AMPlayer.swf";
+        swfParams.mediaObjectIDList = movieID;
+      } else {
+        swfLocation = "http://anon.amazon.speedera.net/anon.amazon/upload/amplayer/swf/AMPlayerProd-F8-2.4-1.swf";
+      }
+      swfParams.xmlUrl = "http://www.amazon.com/gp/mpd/getplaylist-v2/" + movieID + "/000-0000000-0000000";
+      flashParams.wmode = "transparent";
+      swfParams.autoPlay = "1";
+    }
+    if (document.getElementById('cv_31098671duration')) {
+      document.getElementById('cv_31098671duration').style.display='none';
+    }
+    cv_31098671loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+  return false;
+}
+		// ]]>
+<!--
+function cv_31098671newHeight(h)
+{	
+    fp_resizePlayerSpace('cv_31098671', 0, h);
+}
+function cv_31098671resetPlayer(w,h,bw,cc) {
+  cv_31098671newHeight(h);
+  cv_31098671so.addVariable("resetBandwidth", bw);
+  cv_31098671so.addVariable("cacheCode", cc);
+  cv_31098671so.setAttribute("height", h);
+  cv_31098671so.setAttribute("width", w);
+  cv_31098671so.write("cv_31098671flashcontent");
+}
+-->
+var cv_31098671RollOverImg = new Image();
+cv_31098671RollOverImg.src = "http://ecx.images-amazon.com/images/I/61Pldsr1wmS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+var cv_31098671preplay = document.getElementById('cv_31098671preplayImageId');
+if (cv_31098671preplay) {
+  cv_31098671preplay.onmouseover = function() {
+    cv_31098671preplay.src = "http://ecx.images-amazon.com/images/I/61Pldsr1wmS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_PIcustomer-video-play-active,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  cv_31098671preplay.onmouseout = function() {
+    cv_31098671preplay.src = "http://ecx.images-amazon.com/images/I/61Pldsr1wmS._SX320_PHcustomer-video-vignette_PIvideo-reviews-bottom,BottomLeft,0,43_PIcustomer-video-play,BottomLeft,130,-12_CR0,0,0,0_.png";
+  }
+  var node = cv_31098671preplay.parentNode;
+  var cv_31098671currentClick = node.onclick;
+  node.onclick = function () {
+    var head = document.getElementsByTagName("head");
+    if (head[0]) { 
+      var logTag = document.createElement('script');
+      logTag.type = "text/javascript";
+      logTag.src = "/gp/customer-media/du/log.html?ie=UTF8
+      head[0].appendChild(logTag);
+    }
+    if (cv_31098671currentClick) {
+      return cv_31098671currentClick();
+    }
+  }
+}
+ Length:: 0:15 MinsI've been using this camera for about a month now, and purchased it primarily out of concern for picture quality. The "feel", controls and options are convenient, and the more complicated menu options can be learned in a relaxing 20 minutes of tinkering; or not - because the Auto features are very adequate.It does "devour" batteries, but that is typical of bright display digital cameras.  Batteries, however, provide the convenience of no charger, or problematic chargers.  One set of batters will last for hundreds of pictures and multiple videos.The pictures are excellent, and the video is of higher quality than my hard drive camcorder.  The attached video is of a "tearless" protest over toy control.

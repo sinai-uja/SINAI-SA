@@ -1,0 +1,3 @@
+        Having some problems with Face Clarity, December 21, 2008
+        ByLes Smith  - See all my reviews
+I am not sure if I am doing something wrong .  The faces in an outside picture are not clear as I expected. I tried it with and without face detection.  Also, I expected to be able to take pictures in low light, but that does not seem to work well.  It has not been the instant gratification I expected, there may be some things I need to learn.  I hope that there is nothing wrong with the camera.
