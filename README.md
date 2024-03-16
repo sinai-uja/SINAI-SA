@@ -2,7 +2,7 @@
 ## Description
 This corpus has been prepared by the SINAI group in December 2008. SINAI SA (Sentiment Analysis) was created by tracking the Amazon website. Nearly 2,000 comments were extracted from different cameras.
 
-*Structure:* The SINAI corpus contains 5 directories and each represents the number of stars for reviews. (eg directory 1 contains rated with a star). Each directory contains a file in plain text by document/comment.
+**Structure:** The SINAI corpus contains 5 directories and each represents the number of stars for reviews. (eg directory 1 contains rated with a star). Each directory contains a file in plain text by document/comment.
 
 The amount of comments is as follows:
 
@@ -25,7 +25,7 @@ Total: 1,943 comments
 | Olympus1030SW    | 168   |
 | PentaxK10D    | 126   |
 | PentaxK200D    | 90   |
-| *Total*    | *1,943*   |
+| **Total**    | **1,943**   |
 	
 
 ## Cita
